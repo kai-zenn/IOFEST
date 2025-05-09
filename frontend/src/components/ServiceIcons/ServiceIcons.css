@@ -1,0 +1,61 @@
+.service-icons {
+  /* background-color: white; */
+  padding: 2rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
+  margin-top: -80px;
+  border-radius: 20px 20px 0 0;
+}
+
+.service-icons-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.service-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.service-icon-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon-circle {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.75rem;
+}
+
+.service-icon-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .service-icons-container {
+    gap: 2rem;
+  }
+  
+  .service-icon-item {
+    width: 100px;
+  }
+}
